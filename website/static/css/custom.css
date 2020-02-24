@@ -1,0 +1,173 @@
+:root {
+
+    --color-dark: #282c34;
+    --color-white: #ffffff;
+    --color-primary: #8668ED;
+    --color-secondary: #EAE6FE;
+
+    --font-name-code: $codeFonts;
+    --font-name-default: $defaultFonts;
+
+    --icon-color: #EAE6FE;
+    --font-color: #EAE6FE;
+
+    --bg-dark: var(--color-dark);;
+    --bg-white: var(--color-white);
+    --bg-primary: var(--color-primary);
+    --bg-code-block: #20232a;
+
+}
+
+
+
+/* FONTS */
+* {
+    font-family: var(--font-name-default) !important;
+    color: var(--color-white);
+}
+
+code { font-family: var(--font-name-code) !important }
+
+
+
+/* ROUTES EXAMPLE */
+.routers-example-column {
+    flex: 1 0 20% !important;
+}
+
+.routers-example-column {
+    flex-wrap: nowrap;
+}
+
+.routers-example-column:first-child code {
+    max-width: 700px;
+    box-shadow: 0 0 12px 3px #21252d;
+    border-radius: 10px;
+    background-color: var(--bg-code-block);
+}
+
+.routers-example-column:last-child  {
+    display: flex;
+}
+
+.routers-example-column:last-child .blockContent {
+    color: #eee;
+    margin: auto;
+}
+
+
+
+/* FEATURES ABOUT */
+.features-about {
+    padding: 20px;
+    margin-top: 100px;
+    border-bottom: 4px solid #20232a;
+    vertical-align: middle;
+}
+
+.features-about .blockContent p {
+    filter: brightness(0.7);
+}
+
+.features-about .blockContent h2 p {
+    filter: brightness(1);
+}
+
+
+
+/* POWERED BY */
+.powered-by {
+    text-align: center;
+}
+
+.powered-by h2 {
+    font-size: 1.7rem;
+    padding-top: 40px;
+}
+
+.powered-by img {
+    width: 800px;
+    padding-top: 80px;
+}
+
+
+/* OVERRIDES */
+.fixedHeaderContainer {
+    padding: 20px 0;;
+}
+
+.fixedHeaderContainer .logo, .nav-footer .nav-home img {
+    filter: invert(1);
+}
+
+.button {
+    background-color: #f2f6ff;
+    color: var(--color-primary) !important;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #f2f6ff !important;
+    border: 1px solid #fff;
+    background-color: var(--color-primary);
+
+}
+
+.navigationSlider .slidingNav ul {
+    background-color: var(--color-primary);
+}
+
+
+.mainContainer.index {
+    background: var(--bg-dark);
+}
+
+
+
+
+
+/* RESPONSIVE SETS */
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 768px) {
+
+    .homeContainer .wrapperHero {
+        height: 60vh !important;
+    }
+
+    .routers-example-column > * {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .routers-example-column:first-child .blockContent {
+        margin: auto;
+        width: fit-content;
+        position: relative;
+    }
+
+    .routers-example-column:first-child .blockContent code {
+        background-color: transparent;
+        box-shadow: unset;
+    }
+
+    .routers-example-column:last-child {
+        display: none;
+
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
