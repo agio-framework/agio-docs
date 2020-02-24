@@ -59,7 +59,7 @@ class HomeSplash extends React.Component {
                 <HomeWrapper>
 
                     <div style={{paddingTop: 50}} className="animated fadeIn">
-                        <p style={{fontSize: '2.5em'}}>Easily way to build NodeJS APIs</p>
+                        <p style={{fontSize: '2.5em'}}>{siteConfig.tagline}</p>
                         <p style={{fontSize: '1em', maxWidth: '600px', margin: 'auto', wordSpacing: 1.3}}>
                             Agio is a smaller framework to build HTTP APIs with NodeJS and Typescript. Connect to MongoDB and SQL databases, build controllers, services, validators and serve faster.
                         </p>
